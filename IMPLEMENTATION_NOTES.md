@@ -191,7 +191,7 @@ Berikut adalah alur terperinci yang menggambarkan interaksi antara frontend dan 
     * FE **menyimpan JWT** ini di `localStorage`, `sessionStorage`, atau sebagai `HTTP-only cookie`.
     * FE mengarahkan pengguna ke halaman yang dilindungi (misalnya, `/dashboard`, `/profile`).
 
-### C. Flow Implementasi
+### C. Alur Mengakses Feature yang Dilindungi
 
 1.  **FE:**
     * Pengguna mencoba menavigasi ke rute yang memerlukan otentikasi (misalnya, `/profile`, `/dashboard`).
