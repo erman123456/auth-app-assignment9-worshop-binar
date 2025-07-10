@@ -191,10 +191,10 @@ Berikut adalah alur terperinci yang menggambarkan interaksi antara frontend dan 
     * FE **menyimpan JWT** ini di `localStorage`, `sessionStorage`, atau sebagai `HTTP-only cookie`.
     * FE mengarahkan pengguna ke halaman yang dilindungi (misalnya, `/dashboard`, `/profile`).
 
-### C. Alur Mengakses Sumber Daya yang Dilindungi
+### C. Flow Implementasi
 
 1.  **FE:**
-    * Pengguna mencoba menavigasi ke rute yang memerlukan otentikasi (misalnya, `/profile`, `/settings`).
+    * Pengguna mencoba menavigasi ke rute yang memerlukan otentikasi (misalnya, `/profile`, `/dashboard`).
     * **Proteksi Rute Frontend:** Router FE memeriksa apakah ada JWT yang valid dalam penyimpanan. Jika tidak ada, FE segera mengarahkan pengguna kembali ke halaman `/login`.
 2.  **FE → Backend (API Call ke Rute Terlindungi):**
     * FE membuat permintaan API (misalnya, `GET /api/user/profile`) ke backend.
